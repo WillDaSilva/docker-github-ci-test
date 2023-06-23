@@ -17,5 +17,5 @@ jobs:
               uses: docker/setup-buildx-action@v2
 
             - name: Docker Build
-              runs: |
+              run: |
                   docker build .
