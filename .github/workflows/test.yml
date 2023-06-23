@@ -3,6 +3,9 @@ name: Test Docker Buildx in GitHub CI
 on:
     workflow_dispatch: {}
 
+env:
+    DOCKER_BUILDKIT: '1'
+
 jobs:
     test:
         runs-on: ubuntu-latest
